@@ -1,0 +1,3 @@
+# bun run eslint-check
+bun run ts-check
+bun run lint
