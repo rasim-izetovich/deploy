@@ -92,7 +92,7 @@ export function Home() {
 				transition={{ duration: 1 }}
 				className={styles.title}
 			>
-				<span className={styles.gradientText}>Деплой проекта с нуля</span>
+				<span className={styles.gradientText}>Деплой проекта с нуля 1</span>
 			</m.h1>
 			<m.h2
 				initial={{ opacity: 0, y: 20 }}
