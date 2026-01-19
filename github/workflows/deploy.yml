@@ -23,10 +23,10 @@ jobs:
 
       - name: Deploy to server
         run: |
-          ssh -i ~/.ssh/deploy_key ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
-            cd /root/deploy &&
-            git pull &&
-            npm ci &&
-            npm run build &&
-            pm2 restart test-app
-          '
+            ssh -i ~/.ssh/id_ed25519 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} '
+              cd /root/deploy &&
+              git pull &&
+              npm ci &&
+              npm run build &&
+              pm2 restart test-app
+            '
