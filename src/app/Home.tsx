@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import styles from './Home.module.css'
 
 export function Home() {
-	// const [init, setInit] = useState(false)
+	const [init, setInit] = useState(false)
 
 	useEffect(() => {
 		initParticlesEngine(async engine => {
